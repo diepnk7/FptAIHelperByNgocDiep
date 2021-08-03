@@ -1,0 +1,27 @@
+{
+    "name": "FPT.AI Helper by Ngọc Diệp",
+    "version": "0.0.1",
+    "icons": { 
+		  "16": "logo_0.png",
+          "48": "logo_0.png",
+          "128": "logo_0.png" },
+    "manifest_version": 2,
+    "description": "Phục vụ việc nhúng các scripts cần thiết vô web FPT.AI để tải audio và donate mà web không có",
+    "homepage_url": "http://yoyaldev.github.io",
+    "background": {
+      "scripts": [
+        "js/background.js"
+      ],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_title": "FPT.AI Helper by Ngọc Diệp" ,
+      "default_icon": "logo_0.png" ,
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "https://fpt.ai/tts",
+      "http://fpt.ai/tts",
+      "tabs"
+    ]
+  }
